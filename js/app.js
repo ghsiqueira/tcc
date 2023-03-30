@@ -5,42 +5,40 @@ hamburger.addEventListener("click", function() {
   nav.classList.toggle("active");
 });
 
-const form = document.querySelector("form");
+const form = document.querySelector('#contact-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
 
-form.addEventListener("submit", function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-
-  const nameInput = document.querySelector("#name");
-  const emailInput = document.querySelector("#email");
-  const messageInput = document.querySelector("#message");
-
-  const nameError = document.querySelector("#name-error");
-  const emailError = document.querySelector("#email-error");
-  const messageError = document.querySelector("#message-error");
-
-  if (nameInput.value === "") {
-    nameError.style.display = "block";
-  } else {
-    nameError.style.display = "none";
+  
+  // Verifica se o nome foi preenchido
+  if (nameInput.value.trim() === '') {
+    alert('Por favor, preencha o seu nome.');
+    nameInput.focus();
+    return;
   }
-
-  const emailRegex = /^\S+@\S+\.\S+$/;
-  if (emailInput.value === "" || !emailRegex.test(emailInput.value)) {
-    emailError.style.display = "block";
-  } else {
-    emailError.style.display = "none";
+  
+  // Verifica se o e-mail foi preenchido corretamente
+  if (!isValidEmail(emailInput.value)) {
+    alert('Por favor, digite um e-mail válido.');
+    emailInput.focus();
+    return;
   }
-
-  if (messageInput.value === "") {
-    messageError.style.display = "block";
-  } else {
-    messageError.style.display = "none";
+  
+  // Verifica se a mensagem foi preenchida
+  if (messageInput.value.trim() === '') {
+    alert('Por favor, escreva uma mensagem.');
+    messageInput.focus();
+    return;
   }
-
-  if (nameInput.value !== "" && emailRegex.test(emailInput.value) && messageInput.value !== "") {
-    alert("Mensagem enviada com sucesso!");
-    nameInput.value = "";
-    emailInput.value = "";
-    messageInput.value = "";
-  }
+  
+  // Se todas as validações passarem, envia o formulário
+  form.submit();
 });
+
+function isValidEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
