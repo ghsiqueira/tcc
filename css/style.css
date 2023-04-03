@@ -462,7 +462,7 @@ li {
 .Answer p{
     color:var(--black);
     text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 400;
     transition: .5s ease-in;
 }
