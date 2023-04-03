@@ -1,8 +1,8 @@
 let questions = [
     {
         id: 0,
-        question: "Como faço para pedir o impeachment da Scrum Master?",
-        Answer: "Também gostaria de saber!"
+        question: "Questão",
+        Answer: "Resposta"
     },
     {
         id: 1,
@@ -11,8 +11,8 @@ let questions = [
     },
     {
         id: 2,
-        question: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-        Answer: "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+        question: "Como faço para pedir o impeachment da Scrum Master?",
+        Answer: "Também gostaria de saber!"
     },
     {
         id: 3,
