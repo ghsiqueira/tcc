@@ -6,23 +6,23 @@ let questions = [
     },
     {
         id: 1,
-        question: "Devemos fazer o cadastro pelo site?",
-        Answer: "Depende de vcs!"
+        question: "Questão",
+        Answer: "Resposta"
     },
     {
         id: 2,
-        question: "Como faço para pedir o impeachment da Scrum Master?",
-        Answer: "Também gostaria de saber!"
+        question: "Como faço para pedir publicar meus produtos?",
+        Answer: "Basta instalar o app e logar!"
     },
     {
         id: 3,
-        question: "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
-        Answer: "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+        question: "Questão",
+        Answer: "Resposta"
     },
     {
         id: 4,
-        question: "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
-        Answer: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        question: "Questão",
+        Answer: "Resposta"
     }
   ];
   
